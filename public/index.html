@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <meta charset="UTF-8">
+    <title>MongoScrapper</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="/assets/CSS/style.css" type="text/css">
+    
+  
+</head>
+
+<body>
+    <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="/">
+                <h2> Home </h2></a>
+                 <button type="button" id="btn_savedArticles" class="btn btn-default navbar-btn btn-info">Saved Articles</button>
+                 <button type="button" id="btn_scrape" class="btn btn-default navbar-btn btn-primary">Scrape Articles</button>
+        </div>
+    </nav>
+    <div class="container container-login">
+        <div class="row">
+            <div class="col-md-3"></div>
+            <div class='col-md-6 text-center'>
+                <h1> Cricket News Scrapper</h1>
+                
+            </div>
+        </div>
+    </div>
+    <!-- Modal -->
+    <div id="myModal" class="modal fade" role="dialog" style=" position: absolute; top: 10%; right: 10%; left: 10%">
+        <div class="modal-dialog">
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+                <div class="modal-body"></div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="wrapper">
+        <div id="articles"></div>
+        <div id="savedArticles"></div>
+        <div id="notes"></div>
+    </div>
+   <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+    <script src="app.js"></script>
+</body>
+
+</html>
